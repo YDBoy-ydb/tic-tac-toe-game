@@ -28,6 +28,7 @@ function onCellClick(e) {
 
     board[index] = currentPlayer;
     e.target.textContent = currentPlayer;
+e.target.classList.add(currentPlayer === "X" ? "X" : "O");
 
     if (checkWin(currentPlayer)) {
         alert(`${currentPlayer} wins!`);
