@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X & O Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>X & O Game</h1>
+
+<!-- Controls -->
+<div class="controls">
+    <label for="mode">Mode:</label>
+    <select id="mode">
+        <option value="1">1 Player</option>
+        <option value="2" selected>2 Players</option>
+    </select>
+
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <button onclick="resetGame()">Reset</button>
+    <button onclick="newGame()">New Game</button>
+</div>
+
+<!-- Scoreboard -->
+<div id="scoreboard">
+    Player X: <span id="scoreX">0</span> |
+    Player O: <span id="scoreO">0</span>
+</div>
+
+<!-- Board -->
+<div id="board"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
